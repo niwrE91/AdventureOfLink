@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "easynetwork",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:we7ee/EasyNetwork.git",
+      "state" : {
+        "revision" : "b95e0a17d51d95325e24aa524b9040cf9efda5f4",
+        "version" : "0.1.2"
+      }
+    }
+  ],
+  "version" : 2
+}

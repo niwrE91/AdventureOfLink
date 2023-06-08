@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A35288772A30D5990039FF90 /* EasyNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = A35288762A30D5990039FF90 /* EasyNetwork */; };
+		A352887C2A30DA740039FF90 /* GetAllCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A352887B2A30DA740039FF90 /* GetAllCharacters.swift */; };
+		A352887F2A30E0870039FF90 /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A352887E2A30E0870039FF90 /* Characters.swift */; };
 		A37294262A2F775F001B61D4 /* AdventureOfLinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37294252A2F775F001B61D4 /* AdventureOfLinkApp.swift */; };
 		A37294282A2F775F001B61D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37294272A2F775F001B61D4 /* ContentView.swift */; };
 		A372942A2A2F7760001B61D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A37294292A2F7760001B61D4 /* Assets.xcassets */; };
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A352887B2A30DA740039FF90 /* GetAllCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllCharacters.swift; sourceTree = "<group>"; };
+		A352887E2A30E0870039FF90 /* Characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
 		A37294222A2F775F001B61D4 /* AdventureOfLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdventureOfLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A37294252A2F775F001B61D4 /* AdventureOfLinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventureOfLinkApp.swift; sourceTree = "<group>"; };
 		A37294272A2F775F001B61D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A35288772A30D5990039FF90 /* EasyNetwork in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +77,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A35288782A30D8910039FF90 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A35288792A30D9AE0039FF90 /* Endpoints */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A35288792A30D9AE0039FF90 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				A352887A2A30D9CE0039FF90 /* Zelda FanApis */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		A352887A2A30D9CE0039FF90 /* Zelda FanApis */ = {
+			isa = PBXGroup;
+			children = (
+				A352887B2A30DA740039FF90 /* GetAllCharacters.swift */,
+			);
+			path = "Zelda FanApis";
+			sourceTree = "<group>";
+		};
+		A352887D2A30E0650039FF90 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A352887E2A30E0870039FF90 /* Characters.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A37294192A2F775F001B61D4 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +132,8 @@
 		A37294242A2F775F001B61D4 /* AdventureOfLink */ = {
 			isa = PBXGroup;
 			children = (
+				A352887D2A30E0650039FF90 /* Models */,
+				A35288782A30D8910039FF90 /* Network */,
 				A37294252A2F775F001B61D4 /* AdventureOfLinkApp.swift */,
 				A37294272A2F775F001B61D4 /* ContentView.swift */,
 				A37294292A2F7760001B61D4 /* Assets.xcassets */,
@@ -143,6 +183,9 @@
 			dependencies = (
 			);
 			name = AdventureOfLink;
+			packageProductDependencies = (
+				A35288762A30D5990039FF90 /* EasyNetwork */,
+			);
 			productName = AdventureOfLink;
 			productReference = A37294222A2F775F001B61D4 /* AdventureOfLink.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +258,9 @@
 				Base,
 			);
 			mainGroup = A37294192A2F775F001B61D4;
+			packageReferences = (
+				A35288752A30D5990039FF90 /* XCRemoteSwiftPackageReference "EasyNetwork" */,
+			);
 			productRefGroup = A37294232A2F775F001B61D4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,6 +305,8 @@
 			files = (
 				A37294282A2F775F001B61D4 /* ContentView.swift in Sources */,
 				A37294262A2F775F001B61D4 /* AdventureOfLinkApp.swift in Sources */,
+				A352887C2A30DA740039FF90 /* GetAllCharacters.swift in Sources */,
+				A352887F2A30E0870039FF90 /* Characters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +631,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A35288752A30D5990039FF90 /* XCRemoteSwiftPackageReference "EasyNetwork" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:we7ee/EasyNetwork.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A35288762A30D5990039FF90 /* EasyNetwork */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A35288752A30D5990039FF90 /* XCRemoteSwiftPackageReference "EasyNetwork" */;
+			productName = EasyNetwork;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A372941A2A2F775F001B61D4 /* Project object */;
 }
