@@ -1,13 +1,31 @@
 {
-  "originHash" : "fd88d11507a866afed752ecbb722bbe5ea606b9d608b9bc7793c5cb913c3fb3d",
+  "originHash" : "5179434091768e9ecb9e8e36f71e9b50a09fc8163dbd7971036f1c1e3f90b5ad",
   "pins" : [
     {
       "identity" : "ewnetworking",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/niwrE91/EWNetworking.git",
       "state" : {
-        "revision" : "ec199538bbf94235ba426c7e7f874b051a6302d1",
-        "version" : "0.2.0"
+        "revision" : "a7ccdc4507d5653ba24672faf69c2c669cbf5cce",
+        "version" : "0.2.1"
+      }
+    },
+    {
+      "identity" : "metacodable",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftyLab/MetaCodable.git",
+      "state" : {
+        "revision" : "eeb9f27fc80b4ef21cde1ce22e7dd7e58dbbed38",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "swift-collections",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-collections.git",
+      "state" : {
+        "revision" : "7b847a3b7008b2dc2f47ca3110d8c782fb2e5c7e",
+        "version" : "1.3.0"
       }
     },
     {
@@ -22,10 +40,10 @@
     {
       "identity" : "swift-syntax",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/swiftlang/swift-syntax",
+      "location" : "https://github.com/apple/swift-syntax.git",
       "state" : {
-        "revision" : "f99ae8aa18f0cf0d53481901f88a0991dc3bd4a2",
-        "version" : "601.0.1"
+        "revision" : "64889f0c732f210a935a0ad7cda38f77f876262d",
+        "version" : "509.1.1"
       }
     }
   ],

@@ -1,16 +1,11 @@
-//
-//  GetAllCharacters.swift
-//  AdventureOfLink
-//
-//  Created by Erwin Warkentin on 07.06.23.
-//
-
 import Foundation
 import EWNetworking
 
-struct GetAllCharacters: EndpointType {
-    typealias Response = Characters
+struct GetAllCharakters: EndpointType {
+    typealias Response = Charakters
     
+    var page: Int
+    var name: String = ""
     var baseURL: URL {
         let urlString = "https://zelda.fanapis.com/api/characters?limit=100"
         
@@ -19,11 +14,7 @@ struct GetAllCharacters: EndpointType {
         }
         return url
     }
-    
     var path: String = "api/characters"
-    
     var httpMethod: HTTPMethod = .get
-    
     var headers: [String : String] = ["limit": "20"]
-    
 }

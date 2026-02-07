@@ -4,7 +4,24 @@ import SwiftUI
 struct WindowGroupLinkApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                TabSection {
+                    Tab("All", systemImage: "list.bullet") {
+                        NavigationStack {
+                            AllListView()
+                                .navigationTitle("All")
+                        }
+                    }
+                    
+                    Tab("Search", systemImage: "magnifyingglass") {
+                        NavigationStack {
+                            SearchView()
+                                .navigationTitle("Search")
+                        }
+                        
+                    }
+                }
+            }
         }
     }
 }
