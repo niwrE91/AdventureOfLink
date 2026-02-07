@@ -3,18 +3,28 @@ import SwiftUI
 
 struct AllListView: View {
     private let ewNetworking: EWNetworking = EWNetworking()
-    @State private var characterArray: [Charakter]
+    @State private var charakterArray: [Charakter] = []
     private var page: Int = 1
 
     var body: some View {
         List {
-            Text("Hello World!")
+            ForEach(charakterArray, id: \.self) { charakter in
+                Text(charakter.name)
+            }
         }
         .listStyle(.plain)
         .task {
-//            characters = try ewNetworking.request(<#T##endpoint: EndpointType##EndpointType#>)
+            await fetchData()
         }
     }
+    
+    private func fetchData() async {
+            do {
+                charakterArray = try await ewNetworking.request(GetAllCharakters(page: page)).data
+            } catch {
+                print("ERROR: \(error.localizedDescription)")
+            }
+        }
 }
 
 #Preview {

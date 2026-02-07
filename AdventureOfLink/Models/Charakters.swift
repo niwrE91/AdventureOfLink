@@ -4,7 +4,7 @@ import MetaCodable
 // MARK: - Characters
 @Codable
 struct Charakters: Identifiable, Hashable, Sendable {
-    var id: UUID = UUID()
+    let id: UUID = UUID()
     
     static func == (lhs: Charakters, rhs: Charakters) -> Bool {
         lhs.id == rhs.id

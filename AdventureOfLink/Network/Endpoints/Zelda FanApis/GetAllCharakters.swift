@@ -7,7 +7,7 @@ struct GetAllCharakters: EndpointType {
     var page: Int
     var name: String = ""
     var baseURL: URL {
-        let urlString = "https://zelda.fanapis.com/api/characters?limit=100"
+        let urlString = "https://zelda.fanapis.com/"
         
         guard let url = URL(string: urlString) else {
             fatalError("URL string is not a valid url.")
