@@ -6,35 +6,24 @@
 //
 
 import Foundation
-import EasyNetwork
+import EWNetworking
 
-struct GetAllCharacters: EndPointType {
+struct GetAllCharacters: EndpointType {
     typealias Response = Characters
     
     var baseURL: URL {
-        let urlString = "https://zelda.fanapis.com/api"
-
+        let urlString = "https://zelda.fanapis.com/api/characters?limit=100"
+        
         guard let url = URL(string: urlString) else {
             fatalError("URL string is not a valid url.")
         }
-
         return url
     }
     
-    var path: String {
-        let pathString = "characters"
-        return pathString
-    }
+    var path: String = "api/characters"
     
-    var httpMethod: HTTPMethod { .get }
+    var httpMethod: HTTPMethod = .get
     
-    var task: HTTPTask { .requestParameters(bodyParameter: <#T##HTTPBody?#>, bodyEncoding: , urlParameters: <#T##Parameters?#>) }
-    
-    var httpBody: HTTPBody?
-    
-    var headers: HTTPHeaders?
-    
-    var urlQuery: Parameters?
-    
+    var headers: [String : String] = ["limit": "20"]
     
 }

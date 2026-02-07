@@ -1,0 +1,33 @@
+{
+  "originHash" : "fd88d11507a866afed752ecbb722bbe5ea606b9d608b9bc7793c5cb913c3fb3d",
+  "pins" : [
+    {
+      "identity" : "ewnetworking",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/niwrE91/EWNetworking.git",
+      "state" : {
+        "revision" : "ec199538bbf94235ba426c7e7f874b051a6302d1",
+        "version" : "0.2.0"
+      }
+    },
+    {
+      "identity" : "swift-spyable",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Matejkob/swift-spyable.git",
+      "state" : {
+        "revision" : "5ee55d370fcbd1c4f5f29932876799c16e9647c4",
+        "version" : "0.9.0"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swiftlang/swift-syntax",
+      "state" : {
+        "revision" : "f99ae8aa18f0cf0d53481901f88a0991dc3bd4a2",
+        "version" : "601.0.1"
+      }
+    }
+  ],
+  "version" : 3
+}

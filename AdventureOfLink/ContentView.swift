@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import EasyNetwork
+import EWNetworking
 
 struct ContentView: View {
     

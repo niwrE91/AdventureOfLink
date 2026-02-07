@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		A352887C2A30DA740039FF90 /* GetAllCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A352887B2A30DA740039FF90 /* GetAllCharacters.swift */; };
 		A352887F2A30E0870039FF90 /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A352887E2A30E0870039FF90 /* Characters.swift */; };
-		A37294262A2F775F001B61D4 /* AdventureOfLinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37294252A2F775F001B61D4 /* AdventureOfLinkApp.swift */; };
+		A37294262A2F775F001B61D4 /* WindowGroupLinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37294252A2F775F001B61D4 /* WindowGroupLinkApp.swift */; };
 		A37294282A2F775F001B61D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37294272A2F775F001B61D4 /* ContentView.swift */; };
 		A372942A2A2F7760001B61D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A37294292A2F7760001B61D4 /* Assets.xcassets */; };
-		A372942D2A2F7760001B61D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A372942C2A2F7760001B61D4 /* Preview Assets.xcassets */; };
 		A37294372A2F7760001B61D4 /* AdventureOfLinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37294362A2F7760001B61D4 /* AdventureOfLinkTests.swift */; };
 		A37294412A2F7760001B61D4 /* AdventureOfLinkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37294402A2F7760001B61D4 /* AdventureOfLinkUITests.swift */; };
 		A37294432A2F7760001B61D4 /* AdventureOfLinkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37294422A2F7760001B61D4 /* AdventureOfLinkUITestsLaunchTests.swift */; };
+		A3B205B02F37CAE5003B5A44 /* EWNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = A3B205AF2F37CAE5003B5A44 /* EWNetworking */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,10 +39,9 @@
 		A352887B2A30DA740039FF90 /* GetAllCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllCharacters.swift; sourceTree = "<group>"; };
 		A352887E2A30E0870039FF90 /* Characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
 		A37294222A2F775F001B61D4 /* AdventureOfLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdventureOfLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A37294252A2F775F001B61D4 /* AdventureOfLinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventureOfLinkApp.swift; sourceTree = "<group>"; };
+		A37294252A2F775F001B61D4 /* WindowGroupLinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowGroupLinkApp.swift; sourceTree = "<group>"; };
 		A37294272A2F775F001B61D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A37294292A2F7760001B61D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A372942C2A2F7760001B61D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A37294322A2F7760001B61D4 /* AdventureOfLinkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdventureOfLinkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A37294362A2F7760001B61D4 /* AdventureOfLinkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventureOfLinkTests.swift; sourceTree = "<group>"; };
 		A372943C2A2F7760001B61D4 /* AdventureOfLinkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdventureOfLinkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3B205B02F37CAE5003B5A44 /* EWNetworking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,20 +132,11 @@
 			children = (
 				A352887D2A30E0650039FF90 /* Models */,
 				A35288782A30D8910039FF90 /* Network */,
-				A37294252A2F775F001B61D4 /* AdventureOfLinkApp.swift */,
+				A37294252A2F775F001B61D4 /* WindowGroupLinkApp.swift */,
 				A37294272A2F775F001B61D4 /* ContentView.swift */,
 				A37294292A2F7760001B61D4 /* Assets.xcassets */,
-				A372942B2A2F7760001B61D4 /* Preview Content */,
 			);
 			path = AdventureOfLink;
-			sourceTree = "<group>";
-		};
-		A372942B2A2F7760001B61D4 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				A372942C2A2F7760001B61D4 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		A37294352A2F7760001B61D4 /* AdventureOfLinkTests */ = {
@@ -182,6 +173,7 @@
 			);
 			name = AdventureOfLink;
 			packageProductDependencies = (
+				A3B205AF2F37CAE5003B5A44 /* EWNetworking */,
 			);
 			productName = AdventureOfLink;
 			productReference = A37294222A2F775F001B61D4 /* AdventureOfLink.app */;
@@ -231,7 +223,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 2630;
 				TargetAttributes = {
 					A37294212A2F775F001B61D4 = {
 						CreatedOnToolsVersion = 14.2;
@@ -256,6 +248,7 @@
 			);
 			mainGroup = A37294192A2F775F001B61D4;
 			packageReferences = (
+				A3B205AE2F37CAE5003B5A44 /* XCRemoteSwiftPackageReference "EWNetworking" */,
 			);
 			productRefGroup = A37294232A2F775F001B61D4 /* Products */;
 			projectDirPath = "";
@@ -273,7 +266,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A372942D2A2F7760001B61D4 /* Preview Assets.xcassets in Resources */,
 				A372942A2A2F7760001B61D4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,7 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A37294282A2F775F001B61D4 /* ContentView.swift in Sources */,
-				A37294262A2F775F001B61D4 /* AdventureOfLinkApp.swift in Sources */,
+				A37294262A2F775F001B61D4 /* WindowGroupLinkApp.swift in Sources */,
 				A352887C2A30DA740039FF90 /* GetAllCharacters.swift in Sources */,
 				A352887F2A30E0870039FF90 /* Characters.swift in Sources */,
 			);
@@ -343,6 +335,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -373,8 +366,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = URA6K2N237;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -394,6 +389,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -403,6 +399,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -433,8 +430,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = URA6K2N237;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -447,6 +446,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
@@ -460,8 +460,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AdventureOfLink/Preview Content\"";
-				DEVELOPMENT_TEAM = URA6K2N237;
+				DEVELOPMENT_ASSET_PATHS = WindowGroupLinkApp;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -469,6 +468,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -489,8 +489,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AdventureOfLink/Preview Content\"";
-				DEVELOPMENT_TEAM = URA6K2N237;
+				DEVELOPMENT_ASSET_PATHS = WindowGroupLinkApp;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -498,6 +497,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -514,13 +514,11 @@
 		A372944A2A2F7760001B61D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = URA6K2N237;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Erwin.AdventureOfLinkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -534,13 +532,11 @@
 		A372944B2A2F7760001B61D4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = URA6K2N237;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Erwin.AdventureOfLinkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -554,11 +550,10 @@
 		A372944D2A2F7760001B61D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = URA6K2N237;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Erwin.AdventureOfLinkUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -572,11 +567,10 @@
 		A372944E2A2F7760001B61D4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = URA6K2N237;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Erwin.AdventureOfLinkUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -627,6 +621,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A3B205AE2F37CAE5003B5A44 /* XCRemoteSwiftPackageReference "EWNetworking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/niwrE91/EWNetworking.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A3B205AF2F37CAE5003B5A44 /* EWNetworking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3B205AE2F37CAE5003B5A44 /* XCRemoteSwiftPackageReference "EWNetworking" */;
+			productName = EWNetworking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A372941A2A2F775F001B61D4 /* Project object */;
 }
