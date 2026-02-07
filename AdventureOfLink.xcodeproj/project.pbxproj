@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A35288772A30D5990039FF90 /* EasyNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = A35288762A30D5990039FF90 /* EasyNetwork */; };
 		A352887C2A30DA740039FF90 /* GetAllCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A352887B2A30DA740039FF90 /* GetAllCharacters.swift */; };
 		A352887F2A30E0870039FF90 /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A352887E2A30E0870039FF90 /* Characters.swift */; };
 		A37294262A2F775F001B61D4 /* AdventureOfLinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37294252A2F775F001B61D4 /* AdventureOfLinkApp.swift */; };
@@ -56,7 +55,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A35288772A30D5990039FF90 /* EasyNetwork in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,7 +182,6 @@
 			);
 			name = AdventureOfLink;
 			packageProductDependencies = (
-				A35288762A30D5990039FF90 /* EasyNetwork */,
 			);
 			productName = AdventureOfLink;
 			productReference = A37294222A2F775F001B61D4 /* AdventureOfLink.app */;
@@ -259,7 +256,6 @@
 			);
 			mainGroup = A37294192A2F775F001B61D4;
 			packageReferences = (
-				A35288752A30D5990039FF90 /* XCRemoteSwiftPackageReference "EasyNetwork" */,
 			);
 			productRefGroup = A37294232A2F775F001B61D4 /* Products */;
 			projectDirPath = "";
@@ -631,25 +627,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		A35288752A30D5990039FF90 /* XCRemoteSwiftPackageReference "EasyNetwork" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:we7ee/EasyNetwork.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.2;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		A35288762A30D5990039FF90 /* EasyNetwork */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A35288752A30D5990039FF90 /* XCRemoteSwiftPackageReference "EasyNetwork" */;
-			productName = EasyNetwork;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A372941A2A2F775F001B61D4 /* Project object */;
 }

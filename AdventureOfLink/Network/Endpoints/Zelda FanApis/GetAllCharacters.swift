@@ -28,7 +28,7 @@ struct GetAllCharacters: EndPointType {
     
     var httpMethod: HTTPMethod { .get }
     
-    var task: HTTPTask { .requestParameters(bodyParameter: <#T##HTTPBody?#>, bodyEncoding: <#T##ParameterEncoding#>, urlParameters: <#T##Parameters?#>) }
+    var task: HTTPTask { .requestParameters(bodyParameter: <#T##HTTPBody?#>, bodyEncoding: , urlParameters: <#T##Parameters?#>) }
     
     var httpBody: HTTPBody?
     
