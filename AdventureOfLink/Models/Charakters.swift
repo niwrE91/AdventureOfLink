@@ -8,9 +8,6 @@ struct Charakters: Identifiable, Hashable, Sendable {
     
     static func == (lhs: Charakters, rhs: Charakters) -> Bool {
         lhs.id == rhs.id
-        && lhs.success == rhs.success
-        && lhs.count == rhs.count
-        && lhs.data == rhs.data
     }
     
     let success: Bool

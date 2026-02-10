@@ -16,5 +16,5 @@ struct GetAllCharakters: EndpointType {
     }
     var path: String = "api/characters"
     var httpMethod: HTTPMethod = .get
-    var headers: [String : String] = ["limit": "20"]
+    var parameters: [String : String] { ["limit": "20", "page": "\(self.page)"] }
 }
