@@ -1,5 +1,5 @@
 {
-  "originHash" : "5179434091768e9ecb9e8e36f71e9b50a09fc8163dbd7971036f1c1e3f90b5ad",
+  "originHash" : "6a8ebd7f4fb69d07076b0a3393cbb4c284b0b183c731720df8afe3516f88004e",
   "pins" : [
     {
       "identity" : "ewnetworking",
@@ -8,6 +8,15 @@
       "state" : {
         "revision" : "a7ccdc4507d5653ba24672faf69c2c669cbf5cce",
         "version" : "0.2.1"
+      }
+    },
+    {
+      "identity" : "ewui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/niwrE91/EWUI.git",
+      "state" : {
+        "revision" : "2c52e21a3bf4059293c40e06ca118df6bb61efb3",
+        "version" : "0.1.0"
       }
     },
     {

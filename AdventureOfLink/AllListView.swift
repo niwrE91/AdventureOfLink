@@ -1,4 +1,5 @@
 import EWNetworking
+import EWUI
 import SwiftUI
 
 struct AllListView: View {
@@ -9,7 +10,12 @@ struct AllListView: View {
     var body: some View {
         List {
             ForEach(charakterArray, id: \.self) { charakter in
-                Text(charakter.name)
+                NavigationLink {
+                    CharacterDetailView(charakter: charakter)
+                } label: {
+                    ZeldaOverviewCell(name: charakter.name, race: charakter.race, gender: charakter.gender)
+                }
+
             }
         }
         .listStyle(.plain)

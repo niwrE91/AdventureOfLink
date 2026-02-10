@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A33251462F3B7B29009CD624 /* EWUI in Frameworks */ = {isa = PBXBuildFile; productRef = A33251452F3B7B29009CD624 /* EWUI */; };
+		A33251482F3B7F6D009CD624 /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33251472F3B7F5F009CD624 /* CharacterDetailView.swift */; };
 		A352887C2A30DA740039FF90 /* GetAllCharakters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A352887B2A30DA740039FF90 /* GetAllCharakters.swift */; };
 		A352887F2A30E0870039FF90 /* Charakters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A352887E2A30E0870039FF90 /* Charakters.swift */; };
 		A37294262A2F775F001B61D4 /* WindowGroupLinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37294252A2F775F001B61D4 /* WindowGroupLinkApp.swift */; };
@@ -38,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A33251472F3B7F5F009CD624 /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
 		A352887B2A30DA740039FF90 /* GetAllCharakters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllCharakters.swift; sourceTree = "<group>"; };
 		A352887E2A30E0870039FF90 /* Charakters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charakters.swift; sourceTree = "<group>"; };
 		A37294222A2F775F001B61D4 /* AdventureOfLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdventureOfLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A33251462F3B7B29009CD624 /* EWUI in Frameworks */,
 				A3BDA0372F37DC9A00E5AA1F /* MetaCodable in Frameworks */,
 				A3B205B02F37CAE5003B5A44 /* EWNetworking in Frameworks */,
 			);
@@ -134,6 +138,7 @@
 		A37294242A2F775F001B61D4 /* AdventureOfLink */ = {
 			isa = PBXGroup;
 			children = (
+				A33251472F3B7F5F009CD624 /* CharacterDetailView.swift */,
 				A352887D2A30E0650039FF90 /* Models */,
 				A35288782A30D8910039FF90 /* Network */,
 				A37294252A2F775F001B61D4 /* WindowGroupLinkApp.swift */,
@@ -180,6 +185,7 @@
 			packageProductDependencies = (
 				A3B205AF2F37CAE5003B5A44 /* EWNetworking */,
 				A3BDA0362F37DC9A00E5AA1F /* MetaCodable */,
+				A33251452F3B7B29009CD624 /* EWUI */,
 			);
 			productName = AdventureOfLink;
 			productReference = A37294222A2F775F001B61D4 /* AdventureOfLink.app */;
@@ -256,6 +262,7 @@
 			packageReferences = (
 				A3B205AE2F37CAE5003B5A44 /* XCRemoteSwiftPackageReference "EWNetworking" */,
 				A3BDA0352F37DC9A00E5AA1F /* XCRemoteSwiftPackageReference "MetaCodable" */,
+				A33251442F3B7B29009CD624 /* XCRemoteSwiftPackageReference "EWUI" */,
 			);
 			productRefGroup = A37294232A2F775F001B61D4 /* Products */;
 			projectDirPath = "";
@@ -301,6 +308,7 @@
 				A37294262A2F775F001B61D4 /* WindowGroupLinkApp.swift in Sources */,
 				A352887C2A30DA740039FF90 /* GetAllCharakters.swift in Sources */,
 				A352887F2A30E0870039FF90 /* Charakters.swift in Sources */,
+				A33251482F3B7F6D009CD624 /* CharacterDetailView.swift in Sources */,
 				A3B205B42F37D26D003B5A44 /* SearchView.swift in Sources */,
 				A3B205B22F37D267003B5A44 /* AllListView.swift in Sources */,
 			);
@@ -631,6 +639,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		A33251442F3B7B29009CD624 /* XCRemoteSwiftPackageReference "EWUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/niwrE91/EWUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
 		A3B205AE2F37CAE5003B5A44 /* XCRemoteSwiftPackageReference "EWNetworking" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/niwrE91/EWNetworking.git";
@@ -650,6 +666,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A33251452F3B7B29009CD624 /* EWUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A33251442F3B7B29009CD624 /* XCRemoteSwiftPackageReference "EWUI" */;
+			productName = EWUI;
+		};
 		A3B205AF2F37CAE5003B5A44 /* EWNetworking */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A3B205AE2F37CAE5003B5A44 /* XCRemoteSwiftPackageReference "EWNetworking" */;
